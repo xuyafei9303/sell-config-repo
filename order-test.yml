@@ -16,3 +16,7 @@ eureka:
       
 env:
   test
+  
+girl:
+  name: lucy
+  age: 18

@@ -1,0 +1,17 @@
+zuul:
+  host:
+    connect-timeout-millis: 60000
+    socket-timeout-millis: 60000
+#    自定义路由名称
+  routes:
+    myProduct:
+      path: /myProduct/**
+      serviceId: product
+#      敏感头 不写空无法得到cookie
+      sensitiveHeaders:
+#      禁止以下路由访问
+  ignored-patterns:
+    - /**/product/list
+ribbon:
+  ReadTimeout: 10000
+  ConnectTimeout: 10000

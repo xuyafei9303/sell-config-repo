@@ -8,6 +8,11 @@ spring:
     password: xuyafei
   jpa:
     show-sql: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    password: guest
+    username: guest
 
 eureka:
   client:

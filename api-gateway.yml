@@ -1,11 +1,11 @@
 zuul:
+# 禁止所有敏感头 不写空无法得到cookie
+  sensitive-headers: 
 #    自定义路由名称
   routes:
     myProduct:
       path: /myProduct/**
       serviceId: product
-#      敏感头 不写空无法得到cookie
-      sensitiveHeaders:
 #      禁止以下路由访问
   ignored-patterns:
     - /**/product/list

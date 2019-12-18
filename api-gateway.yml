@@ -7,6 +7,6 @@ zuul:
       path: /myProduct/**
       serviceId: product
 #      禁止以下路由访问
-  ignored-patterns:
-    - /**/product/list
+#   ignored-patterns:
+#     - /**/product/list
 
